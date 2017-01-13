@@ -1,0 +1,473 @@
+/* Universal  Styles */
+
+.hidden{
+    display: none;
+}
+
+/* Main Wrapper */
+
+body{
+    margin: 0;
+    font-family: Arial, helvetica, sans-serif;
+}
+
+.wrapper{
+    background-image: url("../img/calculator_backgroundII.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+
+/*Toggle Button hover */
+.toggleIcon{
+    position: relative;
+}
+
+.tooltip{
+    position: relative;
+}
+
+.tooltip p{
+    padding: 0 1%;
+}
+
+.tooltipPointer{
+    position: absolute;
+    top: 2em;
+    left: -.75em;
+    width: 0;
+    height: 0;
+    border-top: 1em solid transparent;
+    border-right:1em solid #186BEA;
+    border-bottom: 1em solid transparent;
+}
+
+.toggleIcon:hover .tooltip{
+    display: block;
+    position: absolute;
+    top: -2em;
+    right: -10em;
+    width: 8em;
+    background-color: #186BEA;
+    border-radius: .5em;
+    color: #ffffff;
+}
+
+/*note pad styles */
+.notepad{
+    position: fixed;
+    bottom: 0;
+    left: 2%;
+    width: 20%;
+    height: 20%;
+    background-color: #ffffff;
+    -webkit-transition: height 1s ease-out; /* Safari */
+    transition: height 1s ease-out;
+}
+
+.notepad:hover{
+    height: 50%;
+    box-shadow: -15px 30px 20px #4D4D4D;
+    cursor: hand;
+    cursor: pointer;
+}
+
+.maxHeight{
+    height: 40%;
+}
+
+.notepad ul{
+    margin: 0;
+    padding: 2% 5%;
+}
+
+.notepad li{
+    list-style-type: none;
+    color: #1A1A1A;
+}
+
+.notepad li:first-of-type{
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.notepad li:hover:not(:first-of-type){
+    color: #B32B04;
+}
+
+.notes{
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 1em;
+}
+
+/*
+Calculator Head
+*/
+
+.calculator h1{
+    display: inline-block;
+    margin: 0;
+    padding: .50em 0;
+    font-size: 1.5em;
+    color: #1A1A1A;
+}
+
+.toggleIcon{
+    position: absolute;
+    top: .50em;
+    right: 1em;
+}
+
+.battery{
+    position: absolute;
+    top: .50em;
+    left: 1em;
+}
+
+.toggleIcon i,
+.battery i{
+    font-size: 2em;
+    color: #1A1A1A;
+}
+
+/*
+* Calculator zoom/scale effect
+*/
+
+.grow{
+    transition: all .4s ease-in-out;
+}
+
+.grow:hover{
+    -ms-transform: scale(1.05); /* IE 9 */
+    -webkit-transform: scale(1.05); /* Safari */
+    transform: scale(1.05);
+    box-shadow: -15px 30px 20px #4D4D4D;
+}
+
+/*
+* Calculator Body
+*/
+.calculator-wrapper{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.calculator{
+    position: relative;
+    width: 26vw;
+    margin: 0 auto;
+    bottom: 0;
+    box-sizing: border-box;
+    background-color: lightslategrey;
+    text-align: center;
+    border-radius: .50em;
+}
+
+.calculator:hover{
+    cursor: hand;
+    cursor: pointer;
+}
+
+.display_wrapper{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.numberDisplay{
+    font-family: 'Orbitron', sans-serif;
+    font-size: 3em;
+    width: 100%;
+    height: 20%;
+    margin: 2% 0;
+    padding: 0 2%;
+    border: 0;
+    border-radius: .15em;
+    box-sizing: border-box;
+}
+
+.error{
+    background-color: #d9534f;
+    color: #d40b08;
+}
+
+
+.button_wrapper{
+    width: 90%;
+    margin: 0 auto;
+    font-size: 0;
+}
+
+.column_left{
+    display: inline-block;
+    width: 75%;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    vertical-align: top;
+    text-align: left;
+}
+
+.column_right{
+    display: inline-block;
+    width: 25%;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    vertical-align: top;
+    text-align: right;
+}
+
+button{
+    display: inline-block;
+    font-size: initial;
+    margin: .30em;
+    padding: 0;
+    border: 0;
+    width: 65px;
+    height: 65px;
+    background-color: #f0f0f0;
+    border-radius: .50em;
+}
+
+button:hover{
+    color:#ffffff;
+    background-color: #262626;
+}
+
+/*  specific buttons  */
+
+.operators{
+    background-color: #F3B405;
+    color: white;
+}
+
+.equals{
+    background-color: #e67e10;
+    color: white;
+}
+
+.btn-clear{
+    background-color: #B32B04;
+    color: white;
+}
+
+/* prevents the decmil button from floating out of place with last row of buttons*/
+.numbers{
+    vertical-align: top;
+}
+
+/* Very large displays */
+@media(min-width: 1400px) {
+    .calculator {
+        position: relative;
+        width: 22vw;
+        max-width: 26vw;
+        max-height: 85vh;
+        margin: 0 auto;
+        bottom: 0;
+        box-sizing: border-box;
+        background-color: lightslategrey;
+        text-align: center;
+        border-radius: .50em;
+    }
+}
+
+/* Large displays */
+@media(max-width: 1399px) {
+    .calculator {
+        position: relative;
+        width: 28vw;
+        max-width: 30vw;
+        margin: 0 auto;
+        bottom: 0;
+        box-sizing: border-box;
+        background-color: lightslategrey;
+        text-align: center;
+        border-radius: .50em;
+    }
+    .notepad:hover{
+        height: 60%;
+        box-shadow: -15px 30px 20px #4D4D4D;
+    }
+
+}
+
+/* Medium displays */
+@media(max-width: 1150px) {
+    .calculator {
+        position: relative;
+        min-width: 35vw;
+        max-width: 38vw;
+        /*max-width: 30vw;*/
+        margin: 0 auto;
+        bottom: 0;
+        box-sizing: border-box;
+        background-color: lightslategrey;
+        text-align: center;
+        border-radius: .50em;
+    }
+    .notepad:hover{
+        height: 60%;
+        box-shadow: -15px 30px 20px #4D4D4D;
+    }
+}
+
+/* Medium displays */
+@media(max-width: 900px) {
+    .calculator {
+        position: relative;
+        min-width: 40vw;
+        max-width: 50vw;
+        /*max-width: 30vw;*/
+        margin: 0 auto;
+        bottom: 0;
+        box-sizing: border-box;
+        background-color: lightslategrey;
+        text-align: center;
+        border-radius: .50em;
+    }
+    .notepad{
+        display: none;
+    }
+}
+
+/* Medium displays */
+@media(max-width: 830px) {
+    .calculator {
+        position: relative;
+        min-width: 45vw;
+        min-width: 55vw;
+        margin: 0 auto;
+        bottom: 0;
+        box-sizing: border-box;
+        background-color: lightslategrey;
+        text-align: center;
+        border-radius: .50em;
+    }
+    .notepad{
+        display: none;
+    }
+}
+
+/*  larger mobile displays */
+@media (max-width: 415px){
+
+    .wrapper {
+        background-image: none;
+        height: 100vh;
+        position: relative;
+    }
+
+    .notepad{
+        display: none;
+    }
+
+    .tooltip{
+        display: none;
+    }
+
+    .calculator {
+        position: relative;
+        min-width: 100vw;
+        min-height: 100vh;
+        margin: 0 auto;
+        bottom: 0;
+        box-sizing: border-box;
+        background-color: lightslategrey;
+        text-align: center;
+        border-radius: .50em;
+    }
+
+    .numberDisplay{
+        font-family: 'Orbitron', sans-serif;
+        font-size: 3em;
+        width: 100%;
+        height: 15%;
+        margin: 5% 0 10% 0;
+        padding: 5% 2%;
+        border: 0;
+        border-radius: .15em;
+        box-sizing: border-box;
+    }
+
+    button{
+        display: inline-block;
+        font-size: initial;
+        margin: .50em .30em;
+        padding: 0;
+        border: 0;
+        width: 70px;
+        height: 70px;
+        background-color: #f0f0f0;
+        border-radius: .50em;
+    }
+
+    .grow:hover {
+        -ms-transform: scale(1.0); /* IE 9 */
+        -webkit-transform: scale(1.0); /* Safari */
+        transform: scale(1.0);
+    }
+}
+
+/*  smaller mobile displays */
+@media (max-width: 375px){
+
+    .wrapper {
+        background-image: none;
+        height: 100vh;
+        position: relative;
+    }
+
+    .notepad{
+        display: none;
+    }
+
+    .tooltip{
+        display: none;
+    }
+
+    .calculator {
+        position: relative;
+        min-width: 100vw;
+        min-height: 100vh;
+        margin: 0 auto;
+        bottom: 0;
+        box-sizing: border-box;
+        background-color: lightslategrey;
+        text-align: center;
+        border-radius: .50em;
+    }
+
+    .numberDisplay{
+        font-family: 'Orbitron', sans-serif;
+        font-size: 3em;
+        width: 100%;
+        height: 15%;
+        margin: 5% 0 10% 0;
+        padding: 5% 2%;
+        border: 0;
+        border-radius: .15em;
+        box-sizing: border-box;
+    }
+
+    button{
+        display: inline-block;
+        font-size: initial;
+        margin: .50em .30em;
+        padding: 0;
+        border: 0;
+        width: 60px;
+        height: 60px;
+        background-color: #f0f0f0;
+        border-radius: .50em;
+    }
+
+    .grow:hover {
+        -ms-transform: scale(1.0); /* IE 9 */
+        -webkit-transform: scale(1.0); /* Safari */
+        transform: scale(1.0);
+    }
+}

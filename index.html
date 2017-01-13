@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Calculator</title>
+  <link rel="stylesheet" type="text/css" href="css/calculator-styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
+  <script src="https://use.fontawesome.com/7de87d4cfb.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="js/calculation_script.js"></script>
+  <script src="js/visual.js"></script>
+</head>
+<body>
+<div class="wrapper">
+  <div class="calculator-wrapper">
+    <div class="notepad minHeight">
+      <ul>
+        <li class="notes"><strong>Calculator Capabilities</strong></li>
+        <li class="notes">Basic Arithmetic Operations</li>
+        <li class="notes">Successive operations</li>
+        <li class="notes">multiple operation keys</li>
+        <li class="notes">changing operation keys</li>
+        <li class="notes">decimals</li>
+        <li class="notes">multiple decimals</li>
+        <li class="notes">successive multi operation </li>
+        <li class="notes">division by zero</li>
+      </ul>
+    </div><!-- end notepad -->
+    <div class="calculator grow">
+      <h1>T-1 Calculator</h1>
+        <div class="toggleIcon">
+          <div class="tooltip hidden">
+            <p>On/off switch for zoom in effect for calculator </p>
+            <span class="tooltipPointer"></span>
+          </div>
+          <i id="toggleBtn" class="fa fa-toggle-off" aria-hidden="true"></i>
+        </div>
+        <div class="battery">
+          <i class="fa fa-battery-three-quarters" aria-hidden="true"></i>
+        </div>
+        <div class="display_wrapper">
+          <input readonly class="numberDisplay" type="text">
+        </div>
+        <div class="button_wrapper">
+          <div class="column_left">
+            <button class="btn-clear">CE</button>
+            <button class ="btn-clear">C</button>
+            <button class="numbers">1</button>
+            <button class="numbers">2</button>
+            <button class="numbers">3</button>
+            <button class="numbers">4</button>
+            <button class="numbers">5</button>
+            <button class="numbers">6</button>
+            <button class="numbers">7</button>
+            <button class="numbers">8</button>
+            <button class="numbers">9</button>
+            <button class="numbers">0</button>
+            <button class="numbers">.</button>
+            <button class="blank"></button>
+            <button class="blank"></button>
+          </div>
+          <div class="column_right">
+            <button class="operators">+</button>
+            <button class="operators">-</button>
+            <button class="operators">/</button>
+            <button class="operators">*</button>
+            <button class="equals">=</button>
+          </div>
+        </div>
+      </div><!-- end calculator -->
+    </div><!-- end calculator wrapper -->
+</div><!-- end wrapper -->
+</body>
+</html>
