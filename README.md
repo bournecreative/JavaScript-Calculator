@@ -1,18 +1,24 @@
 # Responsive JavaScript Calculator
 
-## Project Details
-Conceive responsive design for calculator that will work across a variety of device screen sizes. Develop functionality to enable user to interact with web application and input values. Build out JavaScript logic to handle basic calculations, successive operations and irregulars forms of user input
+## Description
+Develop an interactive web application with responsive web UI that would demonstrate knowledge of javascript to solve logical operations
 
-###Final design for calculator background
-![alt tag](/img/calculator_backgroundII.png)
+### Project Details
+- Conceive responsive design for calculator that will work across a variety of device screen sizes. 
+- Design responsive UI and enhance experience with visual cues that respond to interacting with the web application
+- Develop functionality to enable user to interact with calculator and input values.
+- Build out logic to handle basic calculations, successive operations and irregulars forms of user input
 
-###mobile screen capture of calculator
-![alt tag](../README_assets/mobile-calculator.JPG width="300px";) 
+####Final site design for desktop background
+<img src="/img/calculator_backgroundII.png"/>
 
-###desktop screen capture of calculator
-![alt tag](../README_assets/desktop-calculator.JPG)
+####Screen capture of mobile view
+<img src="../README_assets/mobile-calculator.JPG" width="300px"/>
 
-###large desktop screen capture of calculator 
-![alt tag](../README_assets/lg-desktop-calculator.JPG)
+####Screen capture of desktop view
+<img src="../README_assets/desktop-calculator.JPG"/>
+
+####Screen capture of large desktop view
+<img src="../README_assets/lg-desktop-calculator.JPG"/>
 
 
