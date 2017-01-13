@@ -7,12 +7,12 @@ Conceive responsive design for calculator that will work across a variety of dev
 ![alt tag](/img/calculator_backgroundII.png)
 
 ###Screen capture of web application for mobile device
-![alt tag](../readMeAssets/mobile-calculator.JPG)
+![alt tag](../README_assets/mobile-calculator.JPG)
 
 ###Screen capture of web application for desktop
-![alt tag](../readMeAssets/desktop-calculator.JPG)
+![alt tag](../README_assets/desktop-calculator.JPG)
 
 ###Screen capture of web application for large desktop
-![alt tag](../readMeAssets/lg-desktop-calculator.JPG)
+![alt tag](../README_assets/lg-desktop-calculator.JPG)
 
 
